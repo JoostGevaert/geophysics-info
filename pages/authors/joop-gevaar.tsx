@@ -1,9 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Layout from '../../components/layout';
 
 export default function JoopGevaar() {
   return (
-    <>
+    <Layout>
       <h1>Author: Joop Gevaar ⚠</h1>
       <Image
         src="/images/Pasfoto_Lisboa.jpeg"
@@ -16,6 +17,6 @@ export default function JoopGevaar() {
           <a>Back to home</a>
         </Link>
       </h2>
-    </>
+    </Layout>
   );
 }
