@@ -19,9 +19,22 @@ export default function Layout({
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Overview and explanation of applied geophysics" />
-        
+        <meta name="og:title" content={siteTitle} />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      {children}
+      <header className={styles.header}>
+        This is the header
+      </header>
+      <main>{children}</main>
+      {!home && (
+        <footer>
+          <div className={styles.backToHome}>
+            <Link href="/">
+              <a>← Back to home</a>
+            </Link>
+          </div>
+        </footer>
+      )}
     </div>
   );
 }
