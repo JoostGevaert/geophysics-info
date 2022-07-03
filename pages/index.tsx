@@ -1,25 +1,34 @@
 import type { NextPage } from 'next'
+import { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
+import { getSortedPostsData } from '../lib/posts'
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
 
-const Home: NextPage = () => {
+export const getStaticProps: GetStaticProps = async () => {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
+}
+
+export default function Home ({
+  allPostsData
+}: {
+  allPostsData: {
+    date: string
+    title: string
+    id: string
+  }[]
+}) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <h1 className={utilStyles.title}>
-        Read{' '}
-        <Link href="/posts/first-post">
-          <a>this page!</a>
-        </Link>
-        {' '}by{' '}
-        <Link href="/authors/joop-gevaar">
-          <a>Joop Gevaar</a>
-        </Link>
-      </h1>
       <section className={utilStyles.headingMd}>
         <p>[Your Self Introduction]</p>
         <p>
@@ -27,8 +36,20 @@ const Home: NextPage = () => {
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <ul className={utilStyles.list}>
+          {allPostsData.map(({ id, date, title }) => (
+            <li className={utilStyles.listItem} key={id}>
+              {title}
+              <br />
+              {id}
+              <br />
+              {date}
+            </li>
+          ))}
+        </ul>
+      </section>
     </Layout>
-  );
+  )
 }
-
-export default Home
