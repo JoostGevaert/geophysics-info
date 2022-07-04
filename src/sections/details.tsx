@@ -21,7 +21,6 @@ const Details = () => {
       p={10}
       spacing={10}
       alignItems="flex-start"
-      bg="gray.50"
     >
       <VStack spacing={3} alignItems="flex-start">
         <Heading size="2xl">Your details</Heading>
