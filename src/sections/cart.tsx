@@ -31,7 +31,7 @@ const  Cart = () => {
         <Text>Click <Button onClick={toggleColorMode} variant="link">here</Button> to change to theme to dark mode</Text>
       </VStack>
       <HStack spacing={6} alignItems="center" w="full">
-        <AspectRatio ratio={1} w={24}>
+        <AspectRatio ratio={1} w={{ base: '20px', md: '24px' }}>
           <Image
             src="/images/post1.jpg"
             alt="Joop Gevaar"
@@ -45,9 +45,9 @@ const  Cart = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          <VStack w="full" spacing={0} alignItems="flex-start">
-            <Heading size="md">Penny board</Heading>
-            <Text color={secondaryTextColor}>PNYCOMP27541</Text>
+          <VStack spacing={0} alignItems="stretch" w="full">
+            <Heading size={{ base: 'sm', md: 'md' }}>Penny board</Heading>
+            <Text color={secondaryTextColor} fontSize={{ base: 'sm', md: 'md' }}>PNYCOMP27541</Text>
           </VStack>
           <Heading size="sm" textAlign="end">
             $119.00
