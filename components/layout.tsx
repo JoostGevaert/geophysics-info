@@ -20,7 +20,6 @@ export default function Layout({
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header>
-        This is the header
       </header>
       <main>{children}</main>
       {!home && (
