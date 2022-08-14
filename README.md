@@ -1,4 +1,9 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# geophysics.info
+Website with an overview and explanation of applied geophysics
+
+## Source:
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).  
+The current project is a minimal blog site from the "Create a Next.js App" tutorial: https://nextjs.org/learn/basics/create-nextjs-app
 
 ## Getting Started
 
