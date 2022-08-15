@@ -4,11 +4,17 @@ import { Center, Table, Thead, Tbody, Tr, Th, Td, TableContainer } from "@chakra
 export default function GeophysicsTable() {
 	return (
 		<Center>
-			<TableContainer width="max-content" justifyContent="center">
+			<TableContainer width="full">
 				<Table variant="simple">
+					<colgroup>
+						<col span={1} style={{width: "5%"}} />
+						<col />
+						<col />
+					</colgroup>
+					
 					<Thead>
 						<Tr>
-							<Th width="50">Type</Th>
+							<Th>Type</Th>
 							<Th>Method</Th>
 							<Th>Property</Th>
 						</Tr>

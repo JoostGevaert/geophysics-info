@@ -8,7 +8,13 @@ const Table: ComponentStyleConfig = {
 			letterSpacing: "normal",
 		},
 	},
-	sizes: { sm: { th: { fontSize: "md" } } },
+	sizes: {
+		sm: {
+			th: {
+				fontSize: "md",
+			},
+		},
+	},
 	defaultProps: { size: "sm" },
 };
 
