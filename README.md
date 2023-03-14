@@ -1,4 +1,5 @@
 # geophysics.info
+
 Website with an overview and explanation of applied geophysics
 
 # Astro Starter Kit: Minimal
