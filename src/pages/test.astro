@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import Navigation from "../components/Navigation.astro";
 
 const pageTitle: string = "Test page";
 const happy: boolean = true;
@@ -16,15 +17,18 @@ const goal: number = 3;
     <title>{pageTitle} | Geophysics.info</title>
   </head>
   <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about">About</a>
-    </nav>
+    <Navigation />
     <section>
       <h1>{pageTitle}</h1>
       {happy && <p>I'm happy to be learning Astro.build</p>}
       {finished && <p>I have finished the Astro.build tutorial</p>}
-      {goal == 3 ? <p>My goal is to finish within 3 weeks</p> : <p>My goal is not to finish within 3 weeks</p>}
+      {
+        goal == 3 ? (
+          <p>My goal is to finish within 3 weeks</p>
+        ) : (
+          <p>My goal is not to finish within 3 weeks</p>
+        )
+      }
     </section>
   </body>
 </html>
