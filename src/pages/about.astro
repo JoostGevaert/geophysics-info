@@ -1,5 +1,33 @@
 ---
 import "../styles/global.css";
+
+const pageTitle: string = "About";
+
+const identity = {
+  firstName: "Joost",
+  lastname: "Gevaert",
+  nationality: "Netherlands",
+  residency: { country: "Spain", city: "Madrid" },
+  occupation: "Applied geophysicist",
+  company: "Arup",
+  hobbies: [
+    "Skiing",
+    "Mountaineering",
+    "Camping",
+    "OSS & geophysics in AEC",
+    "Listening to audiobooks",
+  ],
+  skills: [
+    "Python",
+    "C#",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Grasshopper",
+    "Numerical modelling",
+    "Technical writing",
+  ],
+};
 ---
 
 <html lang="en">
@@ -8,15 +36,15 @@ import "../styles/global.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>About | Geophysics.info</title>
+    <title>{pageTitle} | Geophysics.info</title>
   </head>
   <body>
     <nav>
       <a href="/">Home</a>
-      <a href="/about">About</a>
+      <a href="/test">Test</a>
     </nav>
     <section>
-      <h1>About Applied Geophysics.info</h1>
+      <h1>{pageTitle} Applied Geophysics.info</h1>
       <p>
         The home page of AppliedGeophyscis.info serves as an overview of
         geophysical methods. Each category, method and application is a link,
@@ -28,6 +56,23 @@ import "../styles/global.css";
         provided by geophysics professionals from academia and various
         industries.
       </p>
+
+      <h3>
+        Here are some facts about {identity.firstName}
+        {identity.lastname}
+      </h3>
+      <p>
+        I live in {identity.residency.city}, {identity.residency.country} and I work
+        as {identity.occupation} at {identity.company}.
+      </p>
+      <p>Some of my skills are:</p>
+      <ul>
+        {identity.skills.map((skill) => <li>{skill}</li>)}
+      </ul>
+      <p>Some of my hobbies are:</p>
+      <ul>
+        {identity.hobbies.map((hobby) => <li>{hobby}</li>)}
+      </ul>
     </section>
   </body>
 </html>

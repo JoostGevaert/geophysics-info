@@ -1,0 +1,30 @@
+---
+import "../styles/global.css";
+
+const pageTitle: string = "Test page";
+const happy: boolean = true;
+const finished: boolean = false;
+const goal: number = 3;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle} | Geophysics.info</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+    </nav>
+    <section>
+      <h1>{pageTitle}</h1>
+      {happy && <p>I'm happy to be learning Astro.build</p>}
+      {finished && <p>I have finished the Astro.build tutorial</p>}
+      {goal == 3 ? <p>My goal is to finish within 3 weeks</p> : <p>My goal is not to finish within 3 weeks</p>}
+    </section>
+  </body>
+</html>
