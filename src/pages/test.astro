@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 
 const pageTitle: string = "Test page";
 const happy: boolean = true;
@@ -17,7 +17,7 @@ const goal: number = 3;
     <title>{pageTitle} | Geophysics.info</title>
   </head>
   <body>
-    <Navigation />
+    <Header />
     <section>
       <h1>{pageTitle}</h1>
       {happy && <p>I'm happy to be learning Astro.build</p>}
