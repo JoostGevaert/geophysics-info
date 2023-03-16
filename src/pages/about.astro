@@ -1,8 +1,9 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
-import Header from "../components/Header.astro";
 
-const pageTitle: string = "About";
+
+const pageTitle: string = "About | Applied Geophysics.info";
 
 const identity = {
   firstName: "Joost",
@@ -37,12 +38,10 @@ const identity = {
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle} | Geophysics.info</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <Header />
-    <section>
-      <h1>{pageTitle} Applied Geophysics.info</h1>
+    <BaseLayout pageTitle={pageTitle}>
       <p>
         The home page of AppliedGeophyscis.info serves as an overview of
         geophysical methods. Each category, method and application is a link,
@@ -54,7 +53,7 @@ const identity = {
         provided by geophysics professionals from academia and various
         industries.
       </p>
-
+      
       <h3>
         Here are some facts about {identity.firstName}
         {identity.lastname}
@@ -71,7 +70,7 @@ const identity = {
       <ul>
         {identity.hobbies.map((hobby) => <li>{hobby}</li>)}
       </ul>
-    </section>
+    </BaseLayout>
 
     <script>
       import "../scripts/menu.js";
