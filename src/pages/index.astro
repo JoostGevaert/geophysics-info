@@ -1,6 +1,6 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
-import BaseLayout from "../layouts/BaseLayout.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 import Intro from "../components/Intro.astro";
 ---
 
@@ -8,7 +8,7 @@ import Intro from "../components/Intro.astro";
   <head>
     <BaseHead title="Geophysics.info | Home" />
   </head>
-  <BaseLayout>
+  <MainLayout>
     <Intro />
     <div class="article-links">
       <a href="/seismic">Seismic</a>:
@@ -89,6 +89,6 @@ import Intro from "../components/Intro.astro";
         use different methods to investigate the Earth's physical properties and
         processes to understand its past, present, and future.
       </p>
-  </BaseLayout>
+  </MainLayout>
   </html>
   
