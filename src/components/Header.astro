@@ -1,6 +1,19 @@
 ---
-import Hamburger from "./Hamburger.astro";
-import Navigation from "./Navigation.astro";
+import Logo from "./Logo.astro";
+import Nav from "./Nav.astro";
 ---
 
-<header><nav><Hamburger /><Navigation /></nav></header>
+<header class="border-gray-200 bg-white dark:border-gray-700 dark:bg-gray-900">
+  <nav
+    class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
+  >
+    <a href="/" class="flex items-center">
+      <Logo />
+      <!-- <span
+        class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
+        >Geophysics.info</span
+      > -->
+    </a>
+    <Nav />
+  </nav>
+</header>

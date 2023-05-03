@@ -1,17 +1,17 @@
 ---
-export type Props = {
-  title?: string;
-  description?: string;
+export interface BaseHeadProps {
+  title: string;
+  description: string;
   permalink?: string;
   image?: string;
-};
+}
 
 const {
   title = "Geophysics.info",
   description = "Overview of geophysical methods and their applications.",
   permalink,
   image,
-} = Astro.props as Props;
+} = Astro.props;
 ---
 
 <meta charset="UTF-8" />

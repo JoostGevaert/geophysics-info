@@ -2,7 +2,7 @@
 
 @layer base {
   body {
-    @apply antialiased bg-astro-light-bg;
+    @apply max-w-4xl bg-astro-light-bg antialiased;
     /* @apply bg-astro-light-bg dark:bg-github-dark-bg dark:text-white; */
   }
 
@@ -10,7 +10,7 @@
   h2,
   h3,
   h4 {
-    @apply text-globe-deep-blue;
+    @apply text-globe-sea-blue;
     /* @apply text-globe-deep-blue dark:text-globe-sea-blue; */
     /* @apply font-medium; */
   }

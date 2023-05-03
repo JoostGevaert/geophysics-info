@@ -1,94 +1,88 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import MainLayout from "../layouts/MainLayout.astro";
-import Intro from "../components/Intro.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HomeIntro from "../components/HomeIntro.astro";
+
+const title = "Home";
+const description = "Overview of geophysical methods and their applications.";
 ---
 
-<html lang="en">
-  <head>
-    <BaseHead title="Geophysics.info | Home" />
-  </head>
-  <MainLayout>
-    <Intro />
-    <div class="article-links">
-      <a href="/seismic">Seismic</a>:
-      <a href="/seismic/srt">Seismic Refraction Tomography (SRT)</a>
-      <a href="/seismic/reflection">Reflection seismics</a>
-    </div>
-    <div class="article-links">
-      <a href="/em">ElectroMagnetic (EM)</a>:
-      <a href="/em/gpr">Ground Penetrating Radar (GPR)</a>
-        <a href="/em/ert">Electrical Resistivity Tomography (ERT)</a>
-        <a href="/em/tem">Time domain ElectroMagnetics</a>
-        <a href="/em/fem">Frequency domain ElectroMagnetics</a>
-      </div>
-      <h3>ELI5</h3>
-      <p>
-        Geophysics is like a big game of "guess what's inside the Earth!"
-        Scientists use special tools to measure things like earthquakes,
-        magnetic fields, and heat to help them understand what the Earth is made
-        of and what's going on inside.
-      </p>
-      <p>
-        It's kind of like when you play "guess what's in the box" by shaking it,
-        listening to it, or feeling it. But instead of a box, geophysicists are
-        trying to guess what's inside the Earth!
-      </p>
-      <p>
-        With the help of geophysics, scientists have been able to make pictures
-        of what's inside the Earth, kind of like taking an X-ray of your body at
-        the doctor's office. These pictures help us understand things like
-        earthquakes, volcanoes, and even how the Earth's magnetic field works.
-      </p>
-      <h3>Layman's terms 1</h3>
-      <p>
-        Geophysics is the study of the physical properties and processes of the
-        Earth and other planets. It is a branch of science that uses physics and
-        mathematics to understand the Earth's structure, composition, and
-        dynamics.
-      </p>
-      <p>
-        Geophysicists study a wide range of phenomena, from the behavior of
-        seismic waves during earthquakes to the way magnetic fields are
-        generated in the Earth's core. They use a variety of techniques,
-        including seismic imaging, gravity measurements, and electromagnetic
-        surveys, to collect data about the Earth's interior and surface.
-      </p>
-      <p>
-        The information collected through geophysics can be used to better
-        understand natural hazards like earthquakes and volcanoes, as well as to
-        explore for natural resources like oil, gas, and minerals. It can also
-        help us to understand the evolution of the Earth over time and its place
-        in the larger universe.
-      </p>
-      <h3>Layman's terms 2</h3>
-      <p>
-        Geophysics is a branch of science that deals with the physical
-        properties and processes of the Earth, including its atmosphere, oceans,
-        and interior. It involves the application of physics and mathematics to
-        study the structure, composition, and behavior of the Earth and its
-        components.
-      </p>
-      <p>
-        For example, geophysicists use seismic waves to study the Earth's
-        interior and identify the location and magnitude of earthquakes. They
-        also use magnetic and gravity measurements to study the Earth's magnetic
-        field and map its structure.
-      </p>
-      <p>
-        A verifiable fact is that geophysics has contributed significantly to
-        our understanding of the Earth's evolution and the processes that shape
-        its surface. For instance, geophysical studies have shown that the
-        Earth's crust is made up of tectonic plates that move and interact with
-        each other, leading to the formation of mountains, volcanoes, and other
-        geological features.
-      </p>
-      <p>
-        In analogy, geophysics is like a doctor who uses various tools and
-        techniques to diagnose the health of a patient. Similarly, geophysicists
-        use different methods to investigate the Earth's physical properties and
-        processes to understand its past, present, and future.
-      </p>
-  </MainLayout>
-  </html>
-  
+<BaseLayout content={{ title, description }} showPageHeading={false}>
+  <HomeIntro />
+  <div class="article-links">
+    <a href="/seismic">Seismic</a>:
+    <a href="/seismic/srt">Seismic Refraction Tomography (SRT)</a>
+    <a href="/seismic/reflection">Reflection seismics</a>
+  </div>
+  <div class="article-links">
+    <a href="/em">ElectroMagnetic (EM)</a>:
+    <a href="/em/gpr">Ground Penetrating Radar (GPR)</a>
+    <a href="/em/ert">Electrical Resistivity Tomography (ERT)</a>
+    <a href="/em/tem">Time domain ElectroMagnetics</a>
+    <a href="/em/fem">Frequency domain ElectroMagnetics</a>
+  </div>
+  <h3>ELI5</h3>
+  <p>
+    Geophysics is like a big game of "guess what's inside the Earth!" Scientists
+    use special tools to measure things like earthquakes, magnetic fields, and
+    heat to help them understand what the Earth is made of and what's going on
+    inside.
+  </p>
+  <p>
+    It's kind of like when you play "guess what's in the box" by shaking it,
+    listening to it, or feeling it. But instead of a box, geophysicists are
+    trying to guess what's inside the Earth!
+  </p>
+  <p>
+    With the help of geophysics, scientists have been able to make pictures of
+    what's inside the Earth, kind of like taking an X-ray of your body at the
+    doctor's office. These pictures help us understand things like earthquakes,
+    volcanoes, and even how the Earth's magnetic field works.
+  </p>
+  <h3>Layman's terms 1</h3>
+  <p>
+    Geophysics is the study of the physical properties and processes of the
+    Earth and other planets. It is a branch of science that uses physics and
+    mathematics to understand the Earth's structure, composition, and dynamics.
+  </p>
+  <p>
+    Geophysicists study a wide range of phenomena, from the behavior of seismic
+    waves during earthquakes to the way magnetic fields are generated in the
+    Earth's core. They use a variety of techniques, including seismic imaging,
+    gravity measurements, and electromagnetic surveys, to collect data about the
+    Earth's interior and surface.
+  </p>
+  <p>
+    The information collected through geophysics can be used to better
+    understand natural hazards like earthquakes and volcanoes, as well as to
+    explore for natural resources like oil, gas, and minerals. It can also help
+    us to understand the evolution of the Earth over time and its place in the
+    larger universe.
+  </p>
+  <h3>Layman's terms 2</h3>
+  <p>
+    Geophysics is a branch of science that deals with the physical properties
+    and processes of the Earth, including its atmosphere, oceans, and interior.
+    It involves the application of physics and mathematics to study the
+    structure, composition, and behavior of the Earth and its components.
+  </p>
+  <p>
+    For example, geophysicists use seismic waves to study the Earth's interior
+    and identify the location and magnitude of earthquakes. They also use
+    magnetic and gravity measurements to study the Earth's magnetic field and
+    map its structure.
+  </p>
+  <p>
+    A verifiable fact is that geophysics has contributed significantly to our
+    understanding of the Earth's evolution and the processes that shape its
+    surface. For instance, geophysical studies have shown that the Earth's crust
+    is made up of tectonic plates that move and interact with each other,
+    leading to the formation of mountains, volcanoes, and other geological
+    features.
+  </p>
+  <p>
+    In analogy, geophysics is like a doctor who uses various tools and
+    techniques to diagnose the health of a patient. Similarly, geophysicists use
+    different methods to investigate the Earth's physical properties and
+    processes to understand its past, present, and future.
+  </p>
+</BaseLayout>

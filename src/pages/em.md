@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/OldBaseLayout.astro
+layout: ../layouts/BaseLayout.astro
 title: "Electromagnetic geophysical methods"
 pubDate: 2023-03-23
 description: "Principles of electromagnetic geophysical methods"

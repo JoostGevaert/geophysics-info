@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/OldBaseLayout.astro
+layout: ../../layouts/BaseLayout.astro
 title: "Electrical Resistivity Tomography (ERT)"
 pubDate: 2023-03-23
 description: "Principles of electrical resistivity tomography (ERT)"

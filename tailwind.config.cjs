@@ -1,5 +1,8 @@
 module.exports = {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  content: [
+    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
+    "./node_modules/flowbite/**/*.js",
+  ],
   theme: {
     extend: {
       colors: {
@@ -12,11 +15,11 @@ module.exports = {
         "globe-green": "#93eaa4",
         "globe-yellow": "#f9cd5f",
         "globe-red": "#ea677a",
-				
-				"fugro-green": "#8cb781",
-  			"fugro-blue": "#479dab",
-  			"fugro-brown": "#d8bf89",
-  			"fugro-grey": "#ebe9e9",
+
+        "fugro-green": "#8cb781",
+        "fugro-blue": "#479dab",
+        "fugro-brown": "#d8bf89",
+        "fugro-grey": "#ebe9e9",
         mygreen: {
           50: "#eeffe6",
           100: "#d0e6c7",
@@ -68,5 +71,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
