@@ -2,7 +2,7 @@
 
 @layer base {
   body {
-    @apply bg-astro-light-bg;
+    @apply antialiased bg-astro-light-bg;
     /* @apply bg-astro-light-bg dark:bg-github-dark-bg dark:text-white; */
   }
 
