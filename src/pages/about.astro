@@ -1,7 +1,6 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import OldBaseLayout from "../layouts/OldBaseLayout.astro";
 import "../styles/global.css";
-
 
 const pageTitle: string = "About | Applied Geophysics.info";
 
@@ -41,7 +40,7 @@ const identity = {
     <title>{pageTitle}</title>
   </head>
   <body>
-    <BaseLayout pageTitle={pageTitle}>
+    <OldBaseLayout pageTitle={pageTitle}>
       <p>
         The home page of AppliedGeophyscis.info serves as an overview of
         geophysical methods. Each category, method and application is a link,
@@ -53,7 +52,7 @@ const identity = {
         provided by geophysics professionals from academia and various
         industries.
       </p>
-      
+
       <h3>
         Here are some facts about {identity.firstName}
         {identity.lastname}
@@ -70,7 +69,7 @@ const identity = {
       <ul>
         {identity.hobbies.map((hobby) => <li>{hobby}</li>)}
       </ul>
-    </BaseLayout>
+    </OldBaseLayout>
 
     <script>
       import "../scripts/menu.js";

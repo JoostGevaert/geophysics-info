@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BaseLayout.astro
+layout: ../../layouts/OldBaseLayout.astro
 title: "Ground penetrating radar (GPR)"
 pubDate: 2023-03-23
 description: "Principles of ground penetrating radar (GPR)"

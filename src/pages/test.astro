@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import BaseLayout from "../layouts/BaseLayout.astro";
+import OldBaseLayout from "../layouts/OldBaseLayout.astro";
 
 const pageTitle: string = "Test page";
 const happy: boolean = true;
@@ -17,7 +17,7 @@ const goal: number = 3;
     <title>{pageTitle} | Geophysics.info</title>
   </head>
   <body>
-    <BaseLayout pageTitle={pageTitle}>
+    <OldBaseLayout pageTitle={pageTitle}>
       {happy && <p>I'm happy to be learning Astro.build</p>}
       {finished && <p>I have finished the Astro.build tutorial</p>}
       {
@@ -27,7 +27,7 @@ const goal: number = 3;
           <p>My goal is not to finish within 3 weeks</p>
         )
       }
-    </BaseLayout>
+    </OldBaseLayout>
 
     <script>
       import "../scripts/menu.js";
