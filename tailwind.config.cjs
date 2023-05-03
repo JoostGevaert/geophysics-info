@@ -5,12 +5,14 @@ module.exports = {
       colors: {
         "astro-light-bg": "#f1f5f9",
         "github-dark-bg": "#0d1016",
+
         "globe-sea-blue": "#4a87d9",
         "globe-deep-blue": "#346489",
         "globe-dark": "#373737",
         "globe-green": "#93eaa4",
         "globe-yellow": "#f9cd5f",
         "globe-red": "#ea677a",
+				
 				"fugro-green": "#8cb781",
   			"fugro-blue": "#479dab",
   			"fugro-brown": "#d8bf89",
