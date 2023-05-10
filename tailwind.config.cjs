@@ -9,17 +9,18 @@ module.exports = {
         "astro-light-bg": "#f1f5f9",
         "github-dark-bg": "#0d1016",
 
-        "globe-sea-blue": "#4a87d9",
-        "globe-deep-blue": "#346489",
+        "globe-sea-blue": "#4986d7",
+        "globe-deep-blue": "#336389",
         "globe-dark": "#373737",
-        "globe-green": "#93eaa4",
-        "globe-yellow": "#f9cd5f",
-        "globe-red": "#ea677a",
+        "globe-green": "#9af9ac",
+        "globe-yellow": "#f7cb5d",
+        "globe-red": "#e66577",
 
         "fugro-green": "#8cb781",
         "fugro-blue": "#479dab",
         "fugro-brown": "#d8bf89",
         "fugro-grey": "#ebe9e9",
+
         mygreen: {
           50: "#eeffe6",
           100: "#d0e6c7",
