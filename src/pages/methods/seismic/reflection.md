@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BaseLayout.astro
+layout: ../../../layouts/BaseLayout.astro
 title: "Reflection seismics"
 pubDate: 2023-03-23
 description: "Principles of Reflection seismics"
