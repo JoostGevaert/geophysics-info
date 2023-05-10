@@ -1,15 +1,13 @@
 ---
-import Logo from "./Logo.astro";
+import { Icon } from "astro-icon";
 import Nav from "./Nav.astro";
 ---
 
-<header class="flex flex-wrap items-center justify-between py-4">
-    <a href="/" class="flex items-center">
-      <Logo />
-      <!-- <span
-        class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
-        >Geophysics.info</span
-      > -->
-    </a>
-    <Nav />
+<header
+  class="flex flex-wrap items-center justify-between border-b border-globe-sea-blue py-4"
+>
+  <a href="/" title="Home">
+    <Icon name="geophysics-info" class="h-8 w-8 hover:scale-110" />
+  </a>
+  <Nav />
 </header>
