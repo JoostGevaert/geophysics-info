@@ -1,5 +1,5 @@
 ---
-import type { BaseHeadProps } from "../components/BaseHead.astro";
+import type { Props as BaseHeadProps } from "../components/BaseHead.astro";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
@@ -19,17 +19,17 @@ const { content, showPageHeading = true } = Astro.props;
       description={content.description}
     />
   </head>
-  <body class="mx-auto px-4 md:px-6">
+  <body class="mx-auto max-w-6xl px-4 md:px-6">
     <Header />
-    {
-      showPageHeading && (
-        <div class="">
-          <h1 class="text-2xl font-medium">{content.title}</h1>
-          <h5 class="">{content.description}</h5>
-        </div>
-      )
-    }
-    <main>
+    <main class="py-4">
+      {
+        showPageHeading && (
+          <div class="mb-2">
+            <h1 class="text-2xl font-medium">{content.title}</h1>
+            <h5 class="">{content.description}</h5>
+          </div>
+        )
+      }
       <slot />
     </main>
     <Footer />

@@ -30,13 +30,13 @@ const socials: { iconName: string; title: string; href: string }[] = [
 ];
 ---
 
-<div class="flex justify-center space-x-4">
+<div class="flex space-x-4">
   {
     socials.map((social) => (
       <a href={social.href} title={social.title}>
         <Icon
           name={social.iconName}
-          class="text-globe-dark hover:text-globe-sea-blue h-6 w-6 hover:scale-110"
+          class="text-globe-dark hover:text-globe-sea-blue h-5 w-5 hover:scale-110"
         />
       </a>
     ))

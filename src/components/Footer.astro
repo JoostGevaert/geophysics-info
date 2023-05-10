@@ -1,7 +1,13 @@
 ---
+import { Icon } from "astro-icon";
 import Socials from "./Socials.astro";
 ---
 
-<footer class="border-t border-globe-sea-blue py-4">
+<footer
+  class="flex flex-wrap items-center justify-between border-t border-globe-sea-blue py-4"
+>
+  <a href="/" title="Home">
+    <Icon name="geophysics-info" class="h-6 w-6 hover:scale-110" />
+  </a>
   <Socials />
 </footer>

@@ -1,10 +1,6 @@
 import type { NavItems } from "./types";
 
 export const NAV_ITEMS: NavItems = {
-  home: {
-    path: "/",
-    title: "Home",
-  },
   methods: {
     path: "/methods",
     title: "Methods",
@@ -163,7 +159,7 @@ export const NAV_ITEMS: NavItems = {
   },
   about: {
     path: "/about",
-    title: "about",
+    title: "About",
   },
 };
 
