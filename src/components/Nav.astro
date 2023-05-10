@@ -6,7 +6,7 @@ const currentPath = Astro.url.pathname;
 
 <button
   type="button"
-  data-collapse-toggle="navbar"
+  id="navbarCollapseToggle"
   aria-controls="navbar"
   aria-expanded="false"
   class="p-1 text-globe-dark hover:scale-110 md:hidden"
@@ -53,3 +53,14 @@ const currentPath = Astro.url.pathname;
     <li class="py-2"><Socials /></li>
   </ul>
 </nav>
+
+<script>
+  import { Collapse } from "../scripts/collapse";
+
+  const $navbar = document.getElementById("navbar");
+  const $navbarCollapseToggle = document.getElementById("navbarCollapseToggle");
+
+  if ($navbar && $navbarCollapseToggle) {
+    new Collapse($navbar, $navbarCollapseToggle);
+  }
+</script>
