@@ -1,33 +1,7 @@
 ---
-import { Icon } from "astro-icon";
+import Socials from "./Socials.astro";
 ---
 
-<footer class="flex justify-end gap-4 py-6 border-t border-globe-sea-blue">
-  <a
-    href="https://github.com/JoostGevaert/geophysics-info"
-    title="Github repo of this website"
-  >
-    <Icon name="simple-icons:github" class="h-6 w-6" />
-  </a>
-  <a
-    href="https://softwareunderground.org/"
-    title="Software Underground's Website"
-  >
-    <Icon name="swung" class="h-6 w-6" />
-  </a>
-  <a href="https://swung.slack.com/" title="Software Underground's Slack">
-    <Icon name="simple-icons:slack" class="h-6 w-6" />
-  </a>
-  <a
-    href="https://twitter.com/swung_org"
-    title="Software Underground's Website"
-  >
-    <Icon name="simple-icons:twitter" class="h-6 w-6" />
-  </a>
-  <a
-    href="https://www.linkedin.com/company/softwareunderground/"
-    title="Software Underground's Linkedin"
-  >
-    <Icon name="simple-icons:linkedin" class="h-6 w-6" />
-  </a>
+<footer class="border-t border-globe-sea-blue py-4">
+  <Socials />
 </footer>

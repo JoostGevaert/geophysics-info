@@ -1,0 +1,44 @@
+---
+import { Icon } from "astro-icon";
+
+const socials: { iconName: string; title: string; href: string }[] = [
+  {
+    iconName: "simple-icons:github",
+    title: "Github repo of this website",
+    href: "https://github.com/JoostGevaert/geophysics-info",
+  },
+  {
+    iconName: "swungCurrentColor",
+    title: "Software Underground's Website",
+    href: "https://softwareunderground.org/",
+  },
+  {
+    iconName: "simple-icons:slack",
+    title: "Software Underground's Slack",
+    href: "https://swung.slack.com/",
+  },
+  {
+    iconName: "simple-icons:twitter",
+    title: "Software Underground's Twitter",
+    href: "https://twitter.com/swung_org",
+  },
+  {
+    iconName: "simple-icons:linkedin",
+    title: "Software Underground's Linkedin",
+    href: "https://www.linkedin.com/company/softwareunderground/",
+  },
+];
+---
+
+<div class="flex justify-center space-x-4">
+  {
+    socials.map((social) => (
+      <a href={social.href} title={social.title}>
+        <Icon
+          name={social.iconName}
+          class="text-globe-dark hover:text-globe-sea-blue h-6 w-6 hover:scale-110"
+        />
+      </a>
+    ))
+  }
+</div>
