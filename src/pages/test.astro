@@ -1,15 +1,59 @@
 ---
+import { Debug } from "astro/components";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const title = "Test page";
-const description = "Test page of appliedgeophysics.info";
+const identity = {
+  firstName: "Joost",
+  lastname: "Gevaert",
+  nationality: "Netherlands",
+  residency: { country: "Spain", city: "Madrid" },
+  occupation: "Applied geophysicist",
+  company: "Arup",
+  hobbies: [
+    "Skiing",
+    "Mountaineering",
+    "Camping",
+    "OSS & geophysics in AEC",
+    "Listening to audiobooks",
+  ],
+  skills: [
+    "Python",
+    "C#",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Grasshopper",
+    "Numerical modelling",
+    "Technical writing",
+  ],
+};
 
 const happy: boolean = true;
 const finished: boolean = false;
 const goal: number = 3;
+
+const title = "Test page";
+const description = "Test page of appliedgeophysics.info";
 ---
 
 <BaseLayout content={{ title, description }}>
+  <Debug {identity} />
+  <h3 class="my-3">
+    Here are some facts about {identity.firstName}
+    {identity.lastname}
+  </h3>
+  <p>
+    I live in {identity.residency.city}, {identity.residency.country} and I work
+    as {identity.occupation} at {identity.company}.
+  </p>
+  <p>Some of my skills are:</p>
+  <ul>
+    {identity.skills.map((skill) => <li>{skill}</li>)}
+  </ul>
+  <p>Some of my hobbies are:</p>
+  <ul>
+    {identity.hobbies.map((hobby) => <li>{hobby}</li>)}
+  </ul>
   <h3 class="my-3">Conditional rendering</h3>
   {happy && <p>I'm happy to be learning Astro.build</p>}
   {finished && <p>I have finished the Astro.build tutorial</p>}

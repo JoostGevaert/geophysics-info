@@ -1,9 +1,9 @@
 ---
 layout: ../../../layouts/BaseLayout.astro
 title: "Ground penetrating radar (GPR)"
-pubDate: 2023-03-23
 description: "Principles of ground penetrating radar (GPR)"
 author: ChatGPT
+publised: 2023-03-23
 tags: ["ground penetrating radar", "gpr", "introduction", "principles"]
 ---
 

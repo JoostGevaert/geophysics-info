@@ -1,9 +1,9 @@
 ---
 layout: ../../../layouts/BaseLayout.astro
 title: "Seismic Refraction Tomography (SRT)"
-pubDate: 2023-03-23
 description: "Principles of Seismic refraction tomography (SRT)"
 author: ChatGPT
+publised: 2023-03-23
 tags: ["seismic refraction tomography", "srt", "introduction", "principles"]
 ---
 

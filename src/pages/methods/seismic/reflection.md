@@ -1,9 +1,9 @@
 ---
 layout: ../../../layouts/BaseLayout.astro
 title: "Reflection seismics"
-pubDate: 2023-03-23
 description: "Principles of Reflection seismics"
 author: ChatGPT
+publised: 2023-03-23
 tags: ["seismic refraction tomography", "srt", "introduction", "principles"]
 ---
 

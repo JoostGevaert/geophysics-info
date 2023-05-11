@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/BaseLayout.astro
 title: "Electromagnetic geophysical methods"
-pubDate: 2023-03-23
 description: "Principles of electromagnetic geophysical methods"
 author: ChatGPT
+publised: 2023-03-23
 tags: ["electromagnetic", "introduction", "principles"]
 ---
 
